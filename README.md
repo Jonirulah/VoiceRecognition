@@ -9,7 +9,7 @@ Voice Recognition from EvilRP
 - Fast as much as it can be, long voice audio (over 5 seconds) should take more then 4000 msec to process, since this dependes on a lot of factors (network latency for API response times, CPU-load for the FFMPEG Post-Processing) this can depend on your server/computer.
 
 **Tips**
-- Recommended to run with more than CPUS above one core even tho one core can work good with it.
+- Recommended to run with **1+ CPU Cores** even tho one core can work good with it.
 - Recommended to run behind Cloudflare or any caching provider for improved response time and all the features that cloudflare provides.
 
 **Steps**
