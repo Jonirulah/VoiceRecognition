@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./speechRecognition.js"></script>
+    <title>VoiceRecognition by @Jonirulah</title>
+</head>
+
+
+<body>
+    <div id="main-container" class="main-container">
+        <!-- Header !-->
+        <div class="status">
+            <!-- Microphone Icon !-->
+            <div class="icon">
+                <span class="left">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="cyan" id="mic-icon" width="24" height="24" viewBox="0 0 24 24"><path d="M3.979 15.045c-1.468.978-2.168 2.263-2.231 3.955h-1.748c.069-2.346 1.1-4.186 3.153-5.497l.826 1.542zm15.36-14.045c-1.852 0-3.198.966-4.138 2.619l3.545 6.618c3.4.222 5.254-2.15 5.254-4.575 0-2.598-2.098-4.662-4.661-4.662zm-14.867 10.728l1.557 2.906 10.539-4.229-2.716-5.07-9.38 6.393zm4.765 3.773c.633.619.764 1.648.764 2.558v4.941h1.999v-5.097c0-1.776.662-3.024 1.735-4.207l-4.498 1.805z"/></svg>
+            </div>
+
+            <!-- Microphone Status !-->
+            <div class="header">
+                <span id="mic-status"></span>
+            </div>
+        </div>
+
+        <!-- Once we received a response from the server show options to accept or decline !-->
+        <div class="options slide-in-bck-center" id="options">
+            <!-- Recognition Action !-->
+            <div class="action_div">
+                <span class="detected_action_label">Acción detectada:</span>
+                <span class="detected_action" id="detected_action"></span>
+            </div>
+            <!-- Recognition Text !-->
+            <div class="text_div">
+                <span class="recognized_text_label">Texto:</span>
+                <span class="recognized_text" id="recognized_text"></span>
+            </div>
+            <!-- Recognition Buttons !-->
+            <div class="buttons">
+                <!-- Checkmark !-->
+                <div class="decline">
+                    <svg class="arrows-margin-left" fill="gray" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24"><path d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12-5.373-12-12-12-12 5.373-12 12zm7.58 0l5.988-5.995 1.414 1.416-4.574 4.579 4.574 4.59-1.414 1.416-5.988-6.006z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>
+                </div>
+                <!-- Decline X !-->
+                <div class="checkmark">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+                    <svg class="arrows-margin-right" xmlns="http://www.w3.org/2000/svg" fill="gray" width="21" height="21" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.568 18.005l-1.414-1.415 4.574-4.59-4.574-4.579 1.414-1.416 5.988 5.995-5.988 6.005z" /></svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
