@@ -6,7 +6,8 @@ Voice Recognition from EvilRP
 - Voice background removal on FFMPEG Post-Processing.
 - Voice length reduction removing the silent parts of the audio with FFMPEG Post-Processing.
 - Developers are able to retranslate words in case the API missunderstands it, you'll see if you use it for a while.
-- Fast as much as it can be, long voice audio (over 5 seconds) should take more then 4000 msec to process, since this dependes on a lot of factors (network latency for API response times, CPU-load for the FFMPEG Post-Processing) this can depend on your server/computer.
+- As fast as it could be, long voice audio (over 5 seconds) should take more less than 4000 msec to process, since this dependes on a lot of factors (network latency for API response times, CPU-load for the FFMPEG Post-Processing) this can depend on your server/computer.
+- Max Audio Length is 20 seconds due to API limitation.
 
 **Tips**
 - Recommended to run with **1+ CPU Cores** even tho one core can work good with it.
