@@ -22,7 +22,7 @@ Voice Recognition from EvilRP
 
 **Requirements**
 - FFMPEG (added in the system PATH)
-- Python 3.8
+- Python 3.8 or greater
 - A server with more than one core in order to process the requests as fast as possible.
 
 **Python Libraries**
