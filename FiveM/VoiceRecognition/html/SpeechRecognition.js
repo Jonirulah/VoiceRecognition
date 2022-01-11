@@ -14,7 +14,6 @@ navigator.mediaDevices.getUserMedia({ audio: true }).then((stream) => {
                     PerformReq(audioBlob, event.data.url, event.data.token);
                     // audio.play();
                 });
-                // console.log("Voice Recognition has stopped, timeout 150 msec");
             }, 150)
         }
 
@@ -33,7 +32,6 @@ navigator.mediaDevices.getUserMedia({ audio: true }).then((stream) => {
                 audioChunks.push(event.data);
             });
             document.getElementById("main-container").style.display = "inline-block";
-
             // console.log("Voice Recognition has started");
         }
 
@@ -62,7 +60,6 @@ navigator.mediaDevices.getUserMedia({ audio: true }).then((stream) => {
     });
 });
 
-
 function PerformReq(audioBlob, voiceUrl, voiceToken) {
     /* Conversión de AudioStream a Base64 */
     var xhr = new XMLHttpRequest();
@@ -73,6 +70,5 @@ function PerformReq(audioBlob, voiceUrl, voiceToken) {
     };
     xhr.open("POST", voiceUrl, true);
     xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.setRequestHeader('Client-Version', voiceToken);
     xhr.send(audioBlob);
 }
