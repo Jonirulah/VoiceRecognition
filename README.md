@@ -21,5 +21,5 @@ Voice Recognition from EvilRP
 - pip install wit
 - pip install uvicorn
 
-**How to run**
- Open a cmd (inside your speech_server folder) and run **uvicorn speech_server:app --workers 8**
+**How to run the Speech Server**
+- Open a cmd (inside your speech_server folder) and run **uvicorn speech_server:app --workers 8**
