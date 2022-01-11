@@ -11,7 +11,7 @@ navigator.mediaDevices.getUserMedia({ audio: true }).then((stream) => {
                 document.getElementById("mic-status").innerHTML = "Reconocimiento de voz (Procesando)";
                 mediaRecorder.addEventListener("stop", () => {
                     const audioBlob = new Blob(audioChunks);
-                    PerformReq(audioBlob, event.data.url, event.data.token);
+                    PerformReq(audioBlob, event.data.url);
                     // audio.play();
                 });
             }, 150)
@@ -60,8 +60,7 @@ navigator.mediaDevices.getUserMedia({ audio: true }).then((stream) => {
     });
 });
 
-function PerformReq(audioBlob, voiceUrl, voiceToken) {
-    /* Conversión de AudioStream a Base64 */
+function PerformReq(audioBlob, voiceUrl) {
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function() {
         if (xhr.readyState == XMLHttpRequest.DONE) {
