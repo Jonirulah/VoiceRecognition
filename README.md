@@ -2,6 +2,7 @@
 Voice Recognition from EvilRP
 
 **Features**
+- Completely FREE (not using paid API's like Microsoft/IBM/Google)
 - Voice background removal on FFMPEG Post-Processing.
 - Voice length reduction removing the silent parts of the audio with FFMPEG Post-Processing.
 - Developers are able to retranslate words in case the API missunderstands it, you'll see if you use it for a while.
