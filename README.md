@@ -23,3 +23,11 @@ Voice Recognition from EvilRP
 
 **How to run the Speech Server**
 - Open a cmd (inside your speech_server folder) and run **uvicorn speech_server:app --workers 8**
+
+However this is not mandatory is recommended to run this service behind Cloudflare or any other reverse proxy HTTP service.
+In order to send the requests from **FiveM** to your **speech_server.py**, you have in the **configuration.lua** the **Config.Endpoint** where requests will be sent to
+
+For example if you are running this within a domain/cloudflare etc your **speech_server** listening port should be set to 80
+https://voiceserver.roleplay.net/speech
+but if you are not using a domain/cloudflare your URL should be like this (make sure that you have your port TCP open)
+http://163.210.34.39:8000/speech
