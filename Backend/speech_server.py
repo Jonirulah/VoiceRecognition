@@ -4,7 +4,6 @@ import os
 from wit import Wit
 import random
 import json
-from pydantic import BaseModel
 from fastapi import FastAPI, Request, HTTPException
 import logging
 import threading
