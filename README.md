@@ -33,4 +33,4 @@ https://voiceserver.roleplay.net/speech
 But if you are not using a domain/cloudflare your URL should be like this (make sure that you have your port TCP open)  
 http://163.210.34.39:8000/speech  
 
-This is completely open-source, you can fork it, recode it, re-style it, do whatever you want with it. And yeah you are able to do PR if you can improve the code, as always I do those things for myself and them since I don't use them, I don't give support as much as I would do with any active project.
+This is completely open-source, you can fork it, recode it, re-style it, do whatever you want with it.   And yeah you are able to do PR if you can improve the code, as always I do those things for myself and then since I don't use them, I don't give support as much as I would do with any active project.
