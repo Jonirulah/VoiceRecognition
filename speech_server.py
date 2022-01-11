@@ -16,7 +16,7 @@ platform = "Windows"
 
 # Wit.ai API Keys (Multiple can be used in order to avoid rate-limit issues.)
 api_keys = [
-	"JHELZZWY47FHPEQH3W4RLZBPILHL5A3G"
+	"YOUR_API_KEY"
 ]
 
 wit_api = {}
