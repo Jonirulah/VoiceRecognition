@@ -8,6 +8,7 @@ Voice Recognition from EvilRP
 - Developers are able to retranslate words in case the API missunderstands it, you'll see if you use it for a while.
 - As fast as it could be, long voice audio (over 5 seconds) should take more less than 4000 msec to process, since this dependes on a lot of factors (network latency for API response times, CPU-load for the FFMPEG Post-Processing) this can depend on your server/computer.
 - Max Audio Length is 20 seconds due to API limitation.
+- You can do whatever you want with your voice, with some coding of course.
 
 **Tips**
 - Recommended to run with **1+ CPU Cores** even tho one core can work good with it.
